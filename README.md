@@ -7,7 +7,7 @@ This script converts an AAX file to a MP3 file. The MP3 file is split by the det
 ```
   usage: aax2mp3split.py [-h] [-af AAXFOLDER] [-sp SPLITPATTERN] [-ac AUTHCODE]
 
-  aax to mp3 converation wiht chapter split
+  aax to mp3 converation with chapter split
 
   optional arguments:
     -h, --help            show this help message and exit
