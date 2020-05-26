@@ -1,7 +1,11 @@
 # aax2mp3split
 
 ## Description
-This script converts an AAX files to a MP3 files. The MP3 files are split by the detected chapters using _ffprobe_. The split is done using _ffmpeg_ with _segment_times_ option which is much faster then _start/end_ option.
+This script converts an AAX files to a MP3 files. The MP3 files are split by the detected chapters using _ffprobe_. 
+```
+ffprobe -i filename -print_format json -show_format -show_chapters -loglevel error
+```
+The split is done using _ffmpeg_ with _segment_times_ option which is much faster then _start/end_ option.
 
 The script searches recrusively for all AAX files of a defined path.
 
