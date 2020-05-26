@@ -90,11 +90,12 @@ if __name__ == '__main__':
   args = parser.parse_args()
 
   if args.authcode == None:
+    print(args)
     print('No Authorization code provided: use --authcode 1234abcd')
     sys.exit()
 
   aaxs = glob.glob(args.aaxfolder + '/*.aax')
-  AXXs = glob.glob(args.aaxfolder + '/*.AAX')
+  AAXs = glob.glob(args.aaxfolder + '/*.AAX')
   aaxfiles = aaxs + AAXs
 
   if aaxfiles != []:
